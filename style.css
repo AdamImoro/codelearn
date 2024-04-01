@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+.center-navbar ul{
+    display: inline-flex;
+}
+.center-navbar ul li{
+    list-style: none;
+    margin-right: 50px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.center-navbar ul li a {
+    text-decoration: none;
+}
+
+
+.right-navbar button {
+    padding:15px 60px;
+    font-size: 25px;
+    color: #ffff;
+    background: blue;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.right-navbar button:hover{
+    opacity: 0.4;
+}
+.left-navbar span{
+    color: blue;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
