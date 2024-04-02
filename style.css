@@ -2,15 +2,16 @@
     padding: 0;
     margin: 0;
 }
+
+body{
+    background: white;
+}
+
 .navbar{
     display: flex;
     justify-content: space-around;
     padding: 20px 10px;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-
 }
 .center-navbar ul{
     display: inline-flex;
@@ -21,10 +22,29 @@
     color: black;
     font-size: 25px;
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 .center-navbar ul li a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    position:relative;
+}
+.center-navbar ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    border: 0;
+    background: #045eb5;
+    position: absolute;
+    bottom: -14px;
+    transition: width 0.3s;
+}
+
+.center-navbar ul li a:hover::after, .center-navbar ul li a.active-link::after{
+    width: 100%;
 }
 
 
@@ -43,8 +63,116 @@
 }
 .left-navbar span{
     color: blue;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 900;
     letter-spacing: 3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Banner section  */
+
+.banner{
+    display: flex;
+    padding: 30px 40px;
+    align-items: center;
+}
+
+.banner-header h1{
+    display: block;
+    width: 650px;
+    font-family: sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: 10px;
+
+}
+.banner-header p{
+    display: block;
+    width: 550px;
+    margin-left:15px ;
+    font-size: 24px;
+    color: #23080877;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.banner-image img{
+    border-radius: 50%;
+    width: 600px;
+    margin-left: -80px;
+}
+
+.banner-btn{
+    margin-left: 55px;
+    margin-bottom: 50px;
+}
+.banner-btn button{
+    width: 250px;
+    padding: 20px 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.banner-btn .sign-btn{
+    margin-top: 40px;
+    background: blue;
+    color: #ffff;
+    border: none;
+    margin-right: 40px;
+}
+.banner-btn .sign-btn:hover{
+    opacity: 0.4;
+}
+
+.banner-btn .more-btn{
+    background: white;
+    border: 2px solid #ccc;
+}
+
+.banner-btn .more-btn:hover{
+    border-color: blue;
+    opacity: 0.4;
+}
+
+/* about section  */
+
+.about{
+    padding: 40px 30px;
+}
+.core {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.about-card{
+    width: 200px;
+    margin-top: 60px;
+}
+
+.about-card img{
+    width: 80px;
+    color: blue;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.about-card h3{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 4px;
+}
+
+.about-card p {
+    font-size: 18px;
 }
