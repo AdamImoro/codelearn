@@ -59,6 +59,10 @@ body{
     border-radius: 20px;
     font-weight: bold;
 }
+.right-navbar button a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .right-navbar button:hover{
     opacity: 0.4;
@@ -125,10 +129,22 @@ body{
     border: none;
     margin-right: 40px;
 }
+
 .banner-btn .sign-btn:hover{
     opacity: 0.4;
 }
+.banner-btn button a{
 
+    text-decoration: none;
+}
+
+.banner-btn button.sign-btn a{
+    
+    color: #ffff;
+}
+.banner-btn button.more-btn a{
+    color: black;
+}
 .banner-btn .more-btn{
     background: white;
     border: 2px solid #ccc;
@@ -400,17 +416,182 @@ body{
 
 /* ---------------------contacts style page--------- */
 .contact-h {
-    width: 150px;
-    margin-left: 80px;
+    /* width: 150px; */
+    text-align: center;
     margin-top: 100px;
 }
 
 .contact-h h1{
     font-size: 60px;
+    text-align: center;
 }
 
 .sub-h {
     margin-top: 10px;
-    margin-left: 80px;
+    text-align: center;
     font-size: 25px;
 }
+
+
+.contact-b {
+    display: flex;
+    justify-content: center;
+    margin-left: 18%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+form label{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+form input[type ="text"] , form input[type = "email"]{
+    padding-right: 250px;
+    padding-top: 30px;
+    border: 1px solid #ccc;
+    background-color: #7777;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    outline: none;
+}
+
+
+textarea {
+    font-size: 18px;
+    background-color: #7777;
+    border: none;
+    color: #02182d;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+form input[type = "submit"]{
+    width: 450px;
+    padding: 15px 30px;
+    color: white;
+    background-color: blue;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+
+form input[type = "submit"]:hover{
+    opacity:  0.6;
+}
+
+.contact-img img{
+    width: 840px;
+    border-radius: 50%;
+}
+
+.contact-img ul{
+    margin-left: 150px;
+}
+
+.contact-img ul li {
+    list-style:  none;
+    display: inline-block;
+    
+}
+
+.contact-img ul li a img{
+    width: 40px;
+    margin-left: 15px;   
+}
+
+
+
+/* -------------------about page style-------- */
+
+.us-cards{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.us-card{
+    width: 350px;
+    height: 400px;
+}
+
+.us-card h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.us-card img{
+    width: 100%;
+    height: 100%;
+}
+.us-card h3{
+    text-align: center;
+    font-size: 55px;
+}
+
+.about-exp{
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 250px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.ab-student{
+    margin-top: 60px;
+}
+
+.b-ex{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    font-weight: 900;
+}
+
+.about-team{
+    padding-bottom: 70px;
+}
+
+.about-team h2{
+    text-align: center;
+    font-size: 45px;
+}
+
+.our-team{
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 800px){
+    /* .our-team{
+        flex-direction: column;
+    } */
+    
+    .our-team > div {
+        margin-bottom: 30px;
+    }
+}
+.team-member {
+    margin-top: 80px;
+}
+.team-member img{
+    width: 300px;
+    border: 2px solid  #ddd;
+    box-shadow: 2px  2px 8px rgba(0, 0, 0, .7); 
+    transition: all .2s ease-in-out;   
+    border-radius: 10px;
+}
+
+.team-member h4{
+    margin-top: 10px;
+    font-size: 24px;
+}
+.team-member p{
+    margin-top: 5px;
+    font-size: 17px;
+    color: #222;
+}
+
